@@ -20,6 +20,7 @@
 		46B27F2F252DE3CE006D2759 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46B27F25252DE3CE006D2759 /* EssentialFeed.framework */; };
 		46B27F44252DE416006D2759 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B27F43252DE416006D2759 /* FeedItem.swift */; };
 		46B27F48252DE460006D2759 /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B27F47252DE460006D2759 /* FeedLoader.swift */; };
+		46C77DC3268379750030A61E /* CacheFeedUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C77DC2268379750030A61E /* CacheFeedUseCaseTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		46B27F35252DE3CE006D2759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46B27F43252DE416006D2759 /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		46B27F47252DE460006D2759 /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
+		46C77DC2268379750030A61E /* CacheFeedUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFeedUseCaseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 		467DE454263FF314003EE20D /* Feed Cache */ = {
 			isa = PBXGroup;
 			children = (
+				46C77DC2268379750030A61E /* CacheFeedUseCaseTests.swift */,
 			);
 			path = "Feed Cache";
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 			files = (
 				466B7EF325DCF6690062BF0E /* LoadFeedFromRemoteUseCaseTests.swift in Sources */,
 				4634DC0725EE809D009C15CF /* URLSessionHTTPClientTests.swift in Sources */,
+				46C77DC3268379750030A61E /* CacheFeedUseCaseTests.swift in Sources */,
 				46939F6E25F2B88200DE4522 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
