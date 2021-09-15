@@ -109,17 +109,17 @@ class LoadFeedFromRemoteUseCaseTests: XCTestCase {
         return (sut, client)
     }
     
-    private func makeItem(description: String? = nil, location: String? = nil, imageURL: URL = URL(string: "http://any-image-url.com")!) -> (model: FeedItem, json: [String: Any]) {
-        let item = FeedItem(id: UUID(),
+    private func makeItem(description: String? = nil, location: String? = nil, imageURL: URL = URL(string: "http://any-image-url.com")!) -> (model: FeedImage, json: [String: Any]) {
+        let item = FeedImage(id: UUID(),
                         description: description,
                         location: location,
-                        imageURL: imageURL
+                        url: imageURL
         )
         let json = [
             "id": item.id.uuidString,
             "description": item.description,
             "location": item.location,
-            "image": item.imageURL.absoluteString
+            "image": item.url.absoluteString
         ].compactMapValues { $0 }
 
         return (item, json)
