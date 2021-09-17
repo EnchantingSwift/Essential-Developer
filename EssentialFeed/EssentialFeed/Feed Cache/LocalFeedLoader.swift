@@ -103,3 +103,4 @@ extension Array where Element == LocalFeedImage {
         }
     }
 }
+
